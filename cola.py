@@ -2,7 +2,7 @@
 class Cola:
     """ Representa una cola con operaciones de encolar, desencolar y
         verificar si está vacía. """
- 
+
     def __init__(self):
         """ Crea una cola vacía. """
         # La cola vacía se representa con una lista vacía
@@ -24,3 +24,6 @@ class Cola:
     def es_vacia(self):
         """ Devuelve True si la lista está vacía, False si no. """
         return self.items == []
+
+    def mostrar(self):
+        return self.items
