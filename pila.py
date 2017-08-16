@@ -24,3 +24,21 @@ class Pila:
     def es_vacia(self):
         """ Devuelve True si la lista está vacía, False si no. """
         return self.items == []
+
+class Pelicula:
+    
+    def __init__(self,nombre,genero,año):
+        self.n = nombre
+        self.g = genero
+        self.a = año
+
+    
+    def getNombre(self):
+        return self.n       
+      
+    def getGenero(self):
+        return self.g
+    
+    def getAño(self):
+        return self.a
+         
