@@ -64,8 +64,8 @@ while True:
         opcion = raw_input('Desea ingresar una expresion matematica en posfijo: (Y/EA/N)')
         if opcion == 'Y':
             exp = raw_input("ingrese la expresion en posfija: ").split(" ")
-            #evaluarCaracteres(exp,tipo,valor)
-            #sacarTabla(tipo, valor)
+            evaluarCaracteres(exp,tipo,valor)
+            sacarTabla(tipo, valor)
             pila = Pila()
             nodo = convertir(exp, pila)
             listaResultado.append(evaluar(pila.desapilar()))
@@ -73,8 +73,8 @@ while True:
         if opcion == 'EA':
             exp = raw_input("ingrese la expresion en posfija: ").split(" ")
             listaResultado.append(exp)
-            #evaluarCaracteres(exp,tipo,valor)
-            #sacarTabla(tipo, valor)
+            evaluarCaracteres(exp,tipo,valor)
+            sacarTabla(tipo, valor)
             pila1 = Pila()
             nodo = convertir(listaResultado, pila1)
             print "el resultado es  ", evaluar(pila1.desapilar())
